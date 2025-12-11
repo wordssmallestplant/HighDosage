@@ -8,7 +8,7 @@ The ZIP file contains the following:
 > 3 image folders for added organization (!these are in a css subfolder!).
 > audio folder containing audio for the latte game
 
-~4/6 pages have javascript functionality, the only ones without are farming + history as they're mainly infographic.~
+> 4/6 pages have javascript functionality, the only ones without are farming + history as they're mainly infographic.
 The entire project has been throughly tested and debugged - no errors show in console.log() upon booting. 
 
 > All drawn and recorded assets are handmade by yours truly ~ while not very good, are entirely free to use!
