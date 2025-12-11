@@ -1,0 +1,339 @@
+/* trying to make sure my css doesn't look so jumbled this time!!!! */
+
+/*general for all pages */
+
+
+
+body {
+	margin: 0;
+	font-family: "Segoe UI";
+	/* im basic and adding a repeated border like last time bc i thinks its so cute... my css got soooo mad at me tho lol bc of the gradient*/
+	background-image:
+		url('images/coffeecursor.png'),
+		url('images/coffeecursor.png'),
+		linear-gradient(to bottom, #3e220f, #fdf0d5);
+	background-repeat: repeat-y, repeat-y, no-repeat;
+	background-position: left top, right top, center;
+	background-size: 32px 32px, 32px 32px, cover;
+	cursor: url('images/coffeecursor.png'), auto;
+	min-height: 100vh;
+	/* my gradient kept being a meanie >:( */
+	
+}
+/*ok the above is literally my fav part, my friend vi showed me this code for like a cat that chases ur mouse pointer and it made me totally wanna do a custom one for this site! */
+
+/*navigation bar, on top of all 6 pages */
+
+.navibar {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+/* next is the code for the buttons themselves :3 */
+
+.navibar a {
+	background-color: #ffedd6;
+	color: #5a3522;
+	border-radius: 15px;
+	padding: 10px 10px;
+	margin: 10px;
+	font-size: 16px;
+	white-space: nowrap;
+	
+}
+/*next is code that will affect its appearance while being hovered on! i really liked how that looked in my portfolio*/
+.navibar a:hover {
+	background-color: #d1a979;
+	color: #5a3522;
+	transform: scale(1.2);
+}
+/* this is the code for ALL of the text boxes providing information, just because that comes across very clean to me :) */
+
+.wordsies {
+	background-color: #ffffff;
+	color: #5a3522;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	border-radius: 50px;
+	padding: 5px 5px;
+	margin: 15px auto;
+	font-size: 15px;
+	line-height: 1.5;
+	text-align: center;
+	width: 60%;
+	
+}
+
+
+/* this code is for index page ONLY*/
+
+/*this is to format the header, i also am going to be using span so that "high dosage" will appear larger */
+	
+.welcome {
+color:#ffffff;
+font-size: 15px;
+margin: 20px 80px;
+}
+
+.welcome span {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.silly-button {
+	color:#ffffff;
+	font-size: 16px;
+	margin: 50px 300px;
+	text-align: center;
+}
+/* reusing my own code from above #work smarter not harder */
+
+.silly-button button {
+	background-color: #ffedd6;
+	color: #5a3522;
+	border-radius: 15px;
+	padding: 10px 10px;
+	margin: 10px;
+	font-size: 16px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.silly-button button:hover {
+	background-color: #d1a979;
+	color: #5a3522;
+	transform: scale(1.2);
+}
+
+/*farming page AND history page */
+
+.chunk { 
+display: flex;
+align-items: center;
+margin: 60px 30px;
+gap: 30px;
+flex-wrap: wrap;
+}
+.chunk img {
+max-width: 200px;
+border-radius: 50px;
+height: auto;
+flex-shrink: 0;
+}
+/* as you can tell, im trying to maintain identical image structure, i just think it looks better that way if all of my images have the same formatting */
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+
+.chunk .wordsies {
+	flex: 1;
+	margin: 0;
+}
+
+.welcome2 {
+color:#ffffff;
+font-size: 15px;
+margin: 20px 80px;
+}
+/* css JUST for flavor... there is a lot like one million billion */
+.welcomeFlavor {
+color:#ffffff;
+font-size: 15px;
+margin: 20px 80px;
+}
+
+.flavortown {
+	display: flex;
+	flex: wrap;
+	margin: 50px;
+	gap: 25px;
+	justify-content: center;
+}
+
+/* this is the one for the individual flavors which honestly is the most important, hoping won't take me 1 million years */
+
+.flavor {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+/* breaking this up into smaller pieces so i dont freak out */
+	text-align:center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+/* anddd last part */
+	overflow:hidden;
+	cursor:pointer;
+	transition: transform 0.3s;
+	background-color: #ffffff;
+}
+
+.flavor:hover {
+	transform: scale(1.2);
+}
+/* extra work bc i thought cute images would be nice... woe is me */
+.flavor img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/* making this fancy because i feel like its not as fleshed out as the other pages and i still want it to look nice */
+
+.flavortype {
+	position: absolute;
+	border-radius: 10px;
+	padding: 2px 5px;
+	font-size: 15px;
+	bottom: 5px;
+	
+	font-weight: bold;
+	color: #5a3522;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.aboutflavor {
+	display:none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 10px;
+	transform: translate(-50%, -50%);
+	
+	font-weight: bold;
+	text-align: center;
+	color: #5a3522;
+	
+	width: 85%;
+	line-height: 1.2;
+}
+
+/* this is so extensive im starting to regret this portion BUT im almost done... so LOL */
+
+.wordsies#flavor-link-box {
+	margin: 30px auto;
+	padding: 15px;
+	max-width: 400px;
+	text-align: center;
+	border-radius: 15px;
+	
+	background-color: #ffffff;
+	color: #5a3522;
+	font-weight: bold;
+	font-size: 15px;
+}
+/*gotta...gotta make the links pretty too, ya know.... */
+.wordsies#flavor-link-box a {
+	color: #5a3522;
+	text-decoration: underline;
+}
+
+/*css for perfect match :> */
+.welcomeMatch {
+color:#ffffff;
+font-size: 15px;
+margin: 20px 80px;
+}
+
+.perfDrinkContainer {
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+	gap: 50px;
+}
+
+/* adding in css for the inputs eeee!!! */
+
+.inputs {
+	flex: 1;
+	width: 40%;
+	font-size: 15px;
+	color: #5a3c17;
+	font-weight: bold;
+}
+
+.inputs h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.inputs input[type="range"] {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.inputs span {
+	display: inline-block;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.inputs button {
+	margin-top: 20px;
+	padding: 10px 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+/* css for the result!!! yaysiessss */
+
+.result {
+	flex: 1;
+	text-align: center;
+	width: 55%;
+	text-align: center;
+	color: #5a3c17;
+}
+
+.resultLabel {
+	font-size: 15px;
+	color: #555;
+}
+
+.drinkName {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.drinkDescription {
+	font-size: 15px;
+	color: #333;
+}
+
+/* just a little more post making the "create a latte" bc i decided i want them to match lol */
+
+.coffeeBox {
+	background-color: #ffffff;
+	padding: 25px;
+	margin: 40px auto;
+	width: 85%;
+	max-width: 900%;
+	border-radius: 50px;
+}
+
+.perfDrinkContainer {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+/* pretty button oooo */
+
+#submitButton {
+	background-color: #c79a63;
+	color: white;
+	padding: 10px 15px;
+	margin-top: 20px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+#submitButton:hover {
+	background-color: #a67845;
+	transform: scale(1.05);
+}
