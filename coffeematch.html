@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Your Perfect Match</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+
+
+
+
+<body>
+<div class="welcomeMatch"> 
+	<h1>Find your perfect coffee match!!!</h1>
+</div>
+
+
+<nav class="navibar">
+	<a href="index.html">Homepage</a>
+	<a href="farming.html">Farming</a>
+	<a href="history.html">History</a>
+	<a href="flavors.html">Flavors</a>
+	<a href="coffeematch.html">Your PERF Latte</a>
+	<a href="createalatte.html">Create-A-Latte</a>
+</nav>
+
+<!-- this page is my second favorite i luv arrays -->
+<div class="coffeeBox">
+<div class="perfDrinkContainer">
+
+<div class="inputs">
+<h2> Pick your fav flavors:</h2>
+<label><input type="checkbox" value="Fruity" class="categoryCheckbox"> Fruity</label><br>
+<label><input type="checkbox" value="Cozy" class="categoryCheckbox"> Cozy</label><br>
+<label><input type="checkbox" value="Herbal" class="categoryCheckbox"> Herbal</label><br>
+<label><input type="checkbox" value="Intense" class="categoryCheckbox"> Intense</label><br>
+
+<h2>Acidity:</h2>
+<input type="range" min="1" max="10" value="5" id="aciditySlider">
+<span id="acidityValue">5</span>
+
+<h2>Sweetness:</h2>
+<input type="range" min="1" max="10" value="5" id="sweetnessSlider">
+<span id="sweetnessValue">5</span>
+
+<button id="submitButton">Find My Drink!!!</button>
+</div>
+
+<!-- this code below is for the result! up is the check box and sliders for the user to input flavor preferences~ -->
+
+<div class="result">
+<p class="resultLabel">Your Perfect Match:</p>
+<h1 class="drinkName" id="drinkName">--</h1>
+<p class="drinkDescription" id="drinkDescription"></p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>High Dosage</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!--- big header at the top of the page welcoming them to the site! --->
+<header>
+	<div class="welcome">
+		<h1> Welcome to <span>High Dosage</span></h1>
+		<p><em>~where you will get a doppio shot of coffee information!~</em></p>
+	</div>
+</header>
+
+<!-- next is going to be my navigation bars, i'm literally obsessed with them i think they're so cute -->
+<nav class="navibar">
+	<a href="index.html">Homepage</a>
+	<a href="farming.html">Farming</a>
+	<a href="history.html">History</a>
+	<a href="flavors.html">Flavors</a>
+	<a href="coffeematch.html">Your PERF Latte</a>
+	<a href="createalatte.html">Create-A-Latte</a>
+</nav>
+
+<!-- since this page has VERY minimal js, with this button i will just directly add the js to the html :) -->
+
+<div class="silly-button">
+Click on the navigation bar above to learn more...OR... press the button below for a random page!
+<br>
+<button onclick="randomPage()">Let's go!!!!</button>
+</div>
+<!-- i generally prefer to use eventlisteners rather than onclick, but since this is the only instance of js on this page, it wont have any errors! -->
+
+<script> 
+	function randomPage() {
+	const pages = [ "index.html", "farming.html", "history.html", "flavors.html", "coffeematch.html", "createalatte.html" ];
+	const randomIndex = Math.floor(Math.random() * pages.length);
+	window.location.href = pages [randomIndex];
+	}
+</script>
+
+<div style="text-align: center; margin: 70px 0;">
+	<img src="css/images/eepy.png" alt="A sleepy cat laying down meant to resemble me, text on the photo says eepy" style="max-width: 200px; border-radius: 50px">
+</div>
+
+<!-- styled the image in the html simply because this page is the most basic so ill actually have the opportunity lol -->
+
+<!-- now im adding some text finallllyyyy augh -->
+
+<div class="wordsies">
+	<h2>WHO am I?</h2>
+	<p>HIIIII I am a barista of multiple years with a ton of complex knowledge about coffee! I love it so much. <br>
+	I also love reptiles, gaming, coding, and more! I hope you learn lots from this website. </p>
+</div>
+
+<div class="wordsies">
+	<h2>WHAT is this site's purpose?</h2>
+	<p> This site is to provide education on how coffee is grown and processed, the history behind coffee, as well as the different flavor profiles. <br>
+	There is also an interactive game where you can create coffee, as well as a "perfect cup of coffee" quiz! <p>
+</div>
+</body>
+</html>

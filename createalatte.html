@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Create-A-Latte</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- adding a second style sheet and its own javascript because this is SO enormous -->
+<link rel="stylesheet" href="css/stylegame.css">
+<script src="js/gamescript.js" defer></script>
+</head>
+
+<body>
+
+<div class="welcomeGame"> 
+	<h1>Create-A-Latte Interactive Game</h1>
+</div>
+
+<nav class="navibar">
+	<a href="index.html">Homepage</a>
+	<a href="farming.html">Farming</a>
+	<a href="history.html">History</a>
+	<a href="flavors.html">Flavors</a>
+	<a href="coffeematch.html">Your PERF Latte</a>
+	<a href="createalatte.html">Create-A-Latte</a>
+</nav>
+
+<!-- im creating a boardgame area because i do not want to deal with the colorchange affecting my elements i think id LOSE It -->
+<div class="gameboard">
+
+<!-- creating the stage for the star....the cup lol -->
+
+<div class="cupstage">
+	<img src="css/images3/empty.png" alt="An empty espresso cup" id="cupimage">
+	<img src="css/images3/whippedcream.png" alt="Whipped Cream" id="whipOverlay" style="display:none; position: absolute;">
+	<img src="css/images3/sprinkles.png" alt="Sprinkles" id="sprinklesOverlay" style="display:none; position: absolute;">	
+</div>
+
+<!-- this is my stuffsies for the error messages and instructions -->
+<div class="gametext" id="gametext">
+	Press the espresso puck to get started.
+</div>
+
+<div class="uhoh" id="uhoh"></div>
+
+<!-- the first part im dreading... the BUTTONS -->
+<div class="buttons">
+
+<!-- espresso, milkie, and continue buttons :3 -->
+
+<button class="espressoBttn" id="espressoBttn">
+	<img src="css/images3/espressobutton.png" alt="Espresso Button">
+</button>
+
+<!-- just remembered i can copy and paste my code then just...rewrite the other classes...yes good thinking... -->
+<button class="milkBttn" id="milkBttn">
+	<img src="css/images3/milkbutton.png" alt="Add Milk">
+</button>
+
+<button class="continueBttn" id="continueBttn" style="display:none;">
+	Click here, let's go!
+</button>
+
+<!-- these next buttons are like a combo of the above lol, theyre hidden until the continue button is pressed -->
+<button class="mintBttn" id="mintBttn" style="display:none;">
+	<img src="css/images3/mint.png" alt="Mint Flavor">
+</button>
+
+<button class="mochaBttn" id="mochaBttn" style="display:none;">
+	<img src="css/images3/mocha.png" alt="Mocha Flavor">
+</button>
+
+<button class="bananaBttn" id="bananaBttn" style="display:none;">
+	<img src="css/images3/banana.png" alt="Banana Flavor">
+</button>
+
+<button class="strawberryBttn" id="strawberryBttn" style="display:none;">
+	<img src="css/images3/strawberry.png" alt="Strawberry Flavor">
+</button>
+
+<!-- these next ones are even MORE hidden, these wont show up until a flavor is chosen mhm! -->
+
+<button class="whipBttn" id="whipBttn" style="display:none;">
+	<img src="css/images3/whipbutton.png" alt="Whipped Cream">
+</button>
+
+<button class="sprinklesBttn" id="sprinklesBttn" style="display:none;">
+	<img src="css/images3/sprinklesbutton.png" alt="Sprinkles">
+</button>
+
+<!-- reset the game with this button !!!!! -->
+<button class="resetBttn" id="resetBttn" style="display:none;">
+	Great job! Wanna try again?
+</button>
+</div>
+
